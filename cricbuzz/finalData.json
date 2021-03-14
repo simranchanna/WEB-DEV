@@ -1,0 +1,41 @@
+[
+  {
+    "topicUrl": "https://github.com/topics/bash",
+    "projects": [
+      { "projectUrl": "https://github.com/jlevy/the-art-of-command-line" },
+      { "projectUrl": "https://github.com/nvm-sh/nvm" },
+      { "projectUrl": "https://github.com/junegunn/fzf" },
+      { "projectUrl": "https://github.com/dylanaraps/pure-bash-bible" },
+      { "projectUrl": "https://github.com/mathiasbynens/dotfiles" },
+      { "projectUrl": "https://github.com/koalaman/shellcheck" },
+      { "projectUrl": "https://github.com/acmesh-official/acme.sh" },
+      { "projectUrl": "https://github.com/alebcay/awesome-shell" }
+    ]
+  },
+  {
+    "topicUrl": "https://github.com/topics/nim",
+    "projects": [
+      { "projectUrl": "https://github.com/nim-lang/Nim" },
+      { "projectUrl": "https://github.com/zedeus/nitter" },
+      { "projectUrl": "https://github.com/Dav1dde/glad" },
+      { "projectUrl": "https://github.com/nim-lang/nimble" },
+      { "projectUrl": "https://github.com/mratsim/Arraymancer" },
+      { "projectUrl": "https://github.com/yglukhov/nimx" },
+      { "projectUrl": "https://github.com/planety/prologue" },
+      { "projectUrl": "https://github.com/VPashkov/awesome-nim" }
+    ]
+  },
+  {
+    "topicUrl": "https://github.com/topics/bitcoin",
+    "projects": [
+      { "projectUrl": "https://github.com/bitcoin/bitcoin" },
+      { "projectUrl": "https://github.com/ccxt/ccxt" },
+      { "projectUrl": "https://github.com/HelloZeroNet/ZeroNet" },
+      { "projectUrl": "https://github.com/askmike/gekko" },
+      { "projectUrl": "https://github.com/bbfamily/abu" },
+      { "projectUrl": "https://github.com/freqtrade/freqtrade" },
+      { "projectUrl": "https://github.com/yeasy/blockchain_guide" },
+      { "projectUrl": "https://github.com/dvf/blockchain" }
+    ]
+  }
+]
