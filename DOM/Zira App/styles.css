@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12vh;
+    background-color: #333;
+    display: flex;
+}
+.ticket-container{
+    height: 88vh;
+    background-color: #f4eee8;
+}
+.filter-container,
+.add-delete-container{
+    height: 8vh;
+    margin-top: 2vh;
+    margin-left: 8vw;
+    border-radius: 3px;
+    background-color: #444;
+}
+.filter-container{
+    width: 20vw;
+    display: flex;
+}
+.filter{
+    height: 100%;
+    width: 25%;
+    display: flex;
+}
+.pink-btn, .red-btn, .yellow-btn, .green-btn{
+    display: block;
+    width: 40%;
+    height: 40%;
+    border-radius: 3px;
+    margin: auto;
+}
+.pink-btn{
+    background-color: pink;
+}
+.red-btn{
+    background-color: red;
+}
+.yellow-btn{
+    background-color: yellow;
+}
+.green-btn{
+    background-color: green;
+}
+.filter:hover{
+    background-color: #333;
+    cursor: pointer;
+}
+.add-delete-container{
+    width: 10vw;
+    display: flex;
+}
+.add, .delete{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+.action-btn{
+    display: block;
+    width: 40%;
+    height: 40%;
+    border-radius: 3px;
+    margin: auto;
+    padding: 3%;
+    background-color: #fff;
+}
