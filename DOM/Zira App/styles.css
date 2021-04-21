@@ -37,16 +37,16 @@ body{
     border-radius: 3px;
     margin: auto;
 }
-.pink-btn{
+.pink-btn, .modal-pink-filter{
     background-color: pink;
 }
-.red-btn{
+.red-btn, .modal-red-filter{
     background-color: red;
 }
-.yellow-btn{
+.yellow-btn, .modal-yellow-filter{
     background-color: yellow;
 }
-.green-btn{
+.green-btn, .modal-green-filter{
     background-color: green;
 }
 .filter:hover{
@@ -66,8 +66,44 @@ body{
     display: block;
     width: 40%;
     height: 40%;
+    margin-top: calc(8vh * 0.3);
+    margin-left: calc(5vw * 0.3);
     border-radius: 3px;
-    margin: auto;
-    padding: 3%;
+    padding-left: 4%;
     background-color: #fff;
+}
+.modal{
+    box-shadow: 0px 0px 40px 5px gray;
+    position: absolute;
+    top: 15rem;
+    left: calc((100vw - 35rem) / 2);
+    height: 18rem;
+    width: 35rem;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+}
+.task-to-be-added{
+    height: 70%;
+    width: 70%;
+    padding: 3rem;
+    outline: none;
+    overflow: auto;
+}
+.priority-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+    height: 100%;
+    width: 30%;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.modal-filter{
+    width: 100%;
+    height: 20%;
+}
+.modal-filter:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
