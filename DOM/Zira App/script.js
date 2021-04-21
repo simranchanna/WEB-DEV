@@ -21,7 +21,7 @@ addbtn.addEventListener("click", showModal);
 function showModal(e) {
     if(!modalVisible){
         let modal = `<div class="modal">
-        <div class="task-to-be-added" contenteditable></div>
+        <div class="task-to-be-added" data-typed="false" contenteditable>Enter your task here</div>
         <div class="priority-list">
             <div class="modal-pink-filter modal-filter"></div>
             <div class="modal-red-filter modal-filter"></div>
@@ -30,6 +30,14 @@ function showModal(e) {
         </div>
         </div>`;
         tc.innerHTML = tc.innerHTML + modal;
+        let taskInput = document.querySelector(".task-to-be-added");
+        taskInput.addEventListener("click", (e) => {
+            //console.log(e.currentTarget.getAttribute("data-typed"));
+            if(e.currentTarget.getAttribute("data-typed") == "false"){
+                e.currentTarget.innerText = "";
+                e.currentTarget.setAttribute("data-typed", "true");
+            }
+        });
         modalVisible = true;
     }
     
