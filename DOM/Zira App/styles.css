@@ -8,6 +8,8 @@ body{
     height: 12vh;
     background-color: #1cc5dc;
     display: flex;
+    position: sticky;
+    top: 0;
 }
 .ticket-container{
     min-height: 88vh;
