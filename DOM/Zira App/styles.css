@@ -6,12 +6,13 @@ body{
 }
 .navbar{
     height: 12vh;
-    background-color: #333;
+    background-color: #1cc5dc;
     display: flex;
 }
 .ticket-container{
-    height: 88vh;
-    background-color: #f4eee8;
+    min-height: 88vh;
+    background-color: #f4f9f4;
+    padding: 3rem;
 }
 .filter-container,
 .add-delete-container{
@@ -19,7 +20,7 @@ body{
     margin-top: 2vh;
     margin-left: 8vw;
     border-radius: 3px;
-    background-color: #444;
+    background-color: #00adb5;
 }
 .filter-container{
     width: 20vw;
@@ -30,27 +31,31 @@ body{
     width: 25%;
     display: flex;
 }
-.pink-btn, .red-btn, .yellow-btn, .green-btn{
+.btn{
     display: block;
     width: 40%;
     height: 40%;
     border-radius: 3px;
     margin: auto;
+    border: 2px solid black;
 }
-.pink-btn, .modal-pink-filter{
+.pink{
     background-color: pink;
 }
-.red-btn, .modal-red-filter{
+.red{
     background-color: red;
 }
-.yellow-btn, .modal-yellow-filter{
+.yellow{
     background-color: yellow;
 }
-.green-btn, .modal-green-filter{
-    background-color: green;
+.green{
+    background-color: #29bb89;
+}
+.selected-color{
+    background-color: #aad8d3;
 }
 .filter:hover{
-    background-color: #333;
+    background-color: #aad8d3;
     cursor: pointer;
 }
 .add-delete-container{
@@ -93,7 +98,7 @@ body{
 .priority-list{
     display: flex;
     flex-direction: column;
-    background-color: #444;
+    background-color: #1cc5dc;
     height: 100%;
     width: 30%;
     justify-content: space-between;
@@ -102,8 +107,42 @@ body{
 .modal-filter{
     width: 100%;
     height: 20%;
+    border: 2px solid black;
 }
 .modal-filter:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+.active:hover{
+    opacity: 0.5;
+}
+.ticket{
+    height: 10rem;
+    width: 16rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+.ticket.active{
+    opacity: 0.5;
+}
+.ticket-color{
+    height: 6%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.ticket-id{
+    height: 15%;
+    width: 100%;
+    padding: 3%;
+    color: gray;
+}
+.task {
+    height: 79%;
+    width: 100%;
+    padding: 3%;
 }
