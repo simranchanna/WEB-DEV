@@ -9,21 +9,37 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <button class="hide">Hide</button>
+    <!-- <button class="hide">Hide</button>
     <button class="show">Show</button>
     <button class="toggle">Toggle</button>
-    <p>this is the text</p>
+    <p>this is the text</p> -->
+    <!-- <div><p class="test">hello</p></div> -->
+    <div><p>hello test</p></div>
+    <button>remove Div</button>
 
     <script>
-        $(".hide").click(() => {
-            $("p").hide();
-        });
-        $(".show").click(() => {
-            $("p").show();
-        });
-        $(".toggle").click(() => {
-            $("p").toggle();
-        });
+        // $(".hide").click(() => {
+        //     $("p").hide();
+        // });
+        // $(".show").click(() => {
+        //     $("p").show();
+        // });
+        // $(".toggle").click(() => {
+        //     $("p").toggle();
+        // });
+        //<!-- remove element -->
+        // $("button").click(function(){
+        //     // remove all div
+        //     //$("div").remove();
+        //     // remove div with test class
+            
+        //     $("div").remove(".test");
+        //     //$(".test").remove();
+        // })
+        $("button").click(function(){
+            $("div").empty();
+            
+        })
     </script>
     
 </body>
