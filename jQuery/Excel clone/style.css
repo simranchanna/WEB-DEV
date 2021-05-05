@@ -123,23 +123,25 @@ body{
 #select-all{
     height: 25px;
     width: 25px;
-    border: 1px solid lightgray;
+    border: 0.5px solid lightgray;
 }
 #columns{
     height: 25px;
     width: calc(100vw - 25px);
-    border: 1px solid lightgray;
+    border: 0.5px solid lightgray;
     display: flex;
+    overflow: hidden;
 }
 #rows{
     width: 25px;
     height: calc(76vh - 25px);
-    border: 1px solid lightgray;
+    border: 0.5px solid lightgray;
+    overflow: hidden;
 }
 #cells {
     height: calc(76vh - 25px);
     width: calc(100vw - 25px);
-    border: 1px solid lightgray;
+    border: 0.5px solid lightgray;
     overflow: scroll;
 }
 .column-name{
@@ -158,7 +160,43 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 0.5px solid lightgray;
+}
+.cell-row{
+    display: flex;
+}
+.input-cell{
+    width: 100px;
+    min-width: 100px;
+    height: 25px;
+    min-height: 25px;
+    border-bottom: 0.5px solid lightgray;
+    border-right: 0.5px solid lightgray;
+    padding-left: 3px;
+    padding-right: 3px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: Noto Sans;
+}
+.input-cell.selected {
+    border: 3px solid #217346;
+    outline-color: #217346;
+}
+
+.input-cell.top-selected {
+    border-top: none;
+}
+
+.input-cell.bottom-selected {
+    border-bottom: 0.5px solid lightgray;
+}
+
+.input-cell.left-selected {
+    border-left: none;
+}
+
+.input-cell.right-selected {
+    border-right: 0.5px solid lightgray;
 }
 /*----------SHEET BAR----------*/
 .sheet-bar {
