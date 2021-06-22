@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.video-container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+video {
+    height: 100%;
+    width: 100%;
+}
+button {
+    height: 40px;
+    width: 40px;
+}
+#record-btn {
+    position: fixed;
+    top: 20vh;
+    right: 5vw;
+}
+#capture-btn {
+    position: fixed;
+    top: 40vh;
+    right: 5vw;
+}
+.filter-container {
+    position: fixed;
+    top: 20vh;
+    left: 5vw;
+    border: 1px solid #fff;
+    height: 60vh;
+    width: 6vw;
+}
+.filter {
+    border: 1px solid #fff;
+    height: 20%;
+}
+.filter-screen-parent {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
